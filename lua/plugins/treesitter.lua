@@ -20,6 +20,11 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "fish",
+        "css",
+      },
+      autotag = {
+        enable = true,
       },
     },
   },
