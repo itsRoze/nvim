@@ -26,7 +26,8 @@ local treesitter_au = vim.api.nvim_create_augroup("treesitter_au", { clear = tru
 vim.api.nvim_create_autocmd("BufReadPost,FileReadPost", {
   pattern = "*",
   callback = function()
-    vim.cmd("normal! zR")
+    vim.cmd("normal zx")
+    vim.cmd("normal zR")
   end,
   group = treesitter_au,
 })
