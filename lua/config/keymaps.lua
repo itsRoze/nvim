@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 
 local bind = vim.keymap.set
-local opts = { noremap = true, silent = true }
 
 -- ============= Basic Keymaps =============
 
@@ -19,6 +18,9 @@ bind("n", "<Left>", "<Nop>")
 bind("n", "<Right>", "<Nop>")
 bind("n", "<Up>", "<Nop>")
 bind("n", "<Down>", "<Nop>")
+
+-- Clear search highlights
+bind("n", "<leader>nh", ":noh<CR>", { noremap = true, silent = true, desc = "Clear search highlights" })
 
 -- ============= Plugin Keymaps =============
 -- Telescope
