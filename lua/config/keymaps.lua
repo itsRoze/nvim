@@ -25,3 +25,11 @@ bind("n", "<leader>nh", ":noh<CR>", { noremap = true, silent = true, desc = "Cle
 -- ============= Plugin Keymaps =============
 -- Telescope
 bind("n", "<leader>sx", require("telescope.builtin").resume, { noremap = true, silent = true, desc = "Resume" })
+
+-- overwrite lazyvim mappings with vim-tmux-navigator mappings
+-- see: https://github.com/christoomey/vim-tmux-navigator/blob/master/plugin/tmux_navigator.vim
+bind("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>")
+bind("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>")
+bind("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
+bind("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
+bind("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<cr>")
