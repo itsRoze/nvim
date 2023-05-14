@@ -9,5 +9,9 @@ local opt = vim.opt
 opt.winbar = "%=%m %f"
 
 -- Code Folding
-opt.foldmethod = "expr"
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 99
+opt.foldmethod = "indent"
+opt.foldenable = true
 opt.foldexpr = "nvim_treesitter#foldexpr()"
